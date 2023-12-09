@@ -1,7 +1,7 @@
 package Sanket;
 
 import java.util.Arrays;
-
+//This is sample leetcode question
 //Q: find the missing number in a given range for ex, [0,3] --> [0,2,1] but here 3 is missing as the series will be till 3 from 0
 //answer=3;
 public class MissingNumber {
