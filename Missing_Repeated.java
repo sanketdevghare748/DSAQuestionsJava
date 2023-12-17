@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Missing_Repeated {
     public static void main(String[] args) {
-        int [] arr= {1,2,3,4};
+        int [] arr= {2,3,2};
         System.out.println(Arrays.toString(missingRepeated(arr)));
 
     }
@@ -15,14 +15,14 @@ public class Missing_Repeated {
         while(i<arr.length)
         {
             int correct=arr[i]-1;
-            if(i<arr.length && correct!=i)
+            if(i<arr.length && arr[correct]!=arr[i])
             {
                 swap(arr,i,correct);
             }
             else {
                 i++;
             }
-            i++;
+
         }
         System.out.println(Arrays.toString(arr));
         //Find the repeated number and missing number:
