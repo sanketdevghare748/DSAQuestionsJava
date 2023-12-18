@@ -11,6 +11,14 @@ public class Strings_Concept {
             String d= new String("Sanket");
             //We are explicitley creating two different object using "new" keyword pointing to two different values.
             System.out.println(c==d);//should be false.
+
+            System.out.println(c.equals(d));//Should be true.
+            System.out.println(a.equals(b));//Should be true
+
+            /* In .equals(), we do not bother about whether the object are pointing to same value or different we just compare the value
+                pointed by the objects.
+             */
+            System.out.println(d.charAt(0));
         }
     }
 
