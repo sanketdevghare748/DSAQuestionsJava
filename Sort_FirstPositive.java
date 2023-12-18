@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Sort_FirstPositive {
     public static void main(String[] args) {
-        int [] arr= {2,3,-1,1};
+        int [] arr= {1};
         System.out.println(firstPositive(arr));
 
     }
@@ -16,14 +16,14 @@ public class Sort_FirstPositive {
 
         {
             int correct=nums[i]-1;
-            if((i<nums.length && nums[i]>0) && nums[correct]!=nums[i])
+            if((nums[i] <=nums.length && nums[i]>0) && nums[correct]!=nums[i])
             {
                 swap(nums,i,correct);
             }
-            else {
+            else
+            {
                 i++;
             }
-
         }
         System.out.println(Arrays.toString(nums));
         //Find the missing number.
@@ -31,6 +31,7 @@ public class Sort_FirstPositive {
         {
             if(nums[index]!=index+1)
             {
+
                 return index+1;
             }
         }
@@ -41,6 +42,7 @@ public class Sort_FirstPositive {
     {
         int temp=arr[first];
         arr[first]=arr[second];
-     arr[second]=temp;
+        arr[second]=temp;
     }
+
 }
