@@ -7,7 +7,8 @@ public class AgnosticBinarySearch {
         int target=6;
 //        System.out.println(Arrays.toString(arr));
 //        Arrays.sort(arr);
-//        System.out.println(Arrays.toString(arr));
+        //Addig the code for  the
+//       System.out.println(Arrays.toString(arr));
         int ans= AgnosticSearch(arr,target);
         System.out.println(ans);
     }
