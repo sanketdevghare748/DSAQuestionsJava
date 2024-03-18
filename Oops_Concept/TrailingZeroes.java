@@ -6,7 +6,7 @@ import java.util.Arrays;
 //For Ex : [1,0,2,3,0,5,0] op: [0,0,0,1,2,3,5]
 public class TrailingZeroes {
     public static void main(String[] args) {
-        int[] nums = {1, 0, 2, 0, 0, 5, 0,8,2};
+        int[] nums = {1, 0, 2, 0, 0, 5, 0, 8, 2};
         System.out.println(Arrays.toString(trailingzeros(nums)));
     }
 
@@ -31,7 +31,6 @@ public class TrailingZeroes {
             }
             //Last element of array will be added to the start of array.
             arr[0] = last;
-
         }
         return arr;
     }

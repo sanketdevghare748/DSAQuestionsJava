@@ -1,6 +1,6 @@
 package Sanket;
 import java.util.*;
-//This code needs to be reworked again
+//This code works fine.
 public class PeakElementArray {
     public static void main(String[] args) {
      int [] arr= {1,2,3,5,6,8,7,4,-1};
