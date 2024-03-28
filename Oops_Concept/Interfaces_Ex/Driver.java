@@ -11,29 +11,22 @@ public class Driver {
         normalCar.brake();
 
         //for media
-        MediaPlayer stereo= new MediaPlayer() {
-            @Override
-            public void upgradeWheels() {
-
-            }
-
-            @Override
-            public void upgradeEngine() {
-
-            }
-        };
+        MediaPlayer stereo= new MediaPlayer();
         stereo.start();
         stereo.next();
         stereo.previous();
         stereo.stop();
 
-        //For upgrade of media
-        stereo.upgradeMedia();
-
-        //upgrade car wheels and Engine
+        //for Car upgrade
         normalCar.upgradeEngine();
         normalCar.upgradeWheels();
-        normalCar.upgradeEngine();
+        normalCar.upgradeMedia();
+
+
+
+
+
+
 
 
     }
