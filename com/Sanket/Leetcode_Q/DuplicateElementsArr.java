@@ -8,7 +8,7 @@ import java.util.*;
  */
 public class DuplicateElementsArr {
     public static void main(String[] args) {
-        int  []nums={1,0,3,3,3,4,4,2,5,7,7,7}; //output should be [1,2,7]
+        int  []nums={0,0,3,3,3,4,4,0,5,7,7,7}; //output should be [1,2,7]
         //This will print (number:frequency)
         System.out.println((getDuplicates(nums)));
         //Get numbers which are repeated;
@@ -19,9 +19,9 @@ public class DuplicateElementsArr {
 
     private static ArrayList<Integer> getRepeatedTwo(int[] nums) {
         ArrayList<Integer> repeateTwo=new ArrayList<>();
-        for(int i=0;i<getDuplicates(nums).size();i+=2)
+        for(int i=1;i<getDuplicates(nums).size();i+=2)
         {
-            if(getDuplicates(nums).get(i)==2)
+            if(getDuplicates(nums).get(i)>=2)
             {
                 repeateTwo.add(getDuplicates(nums).get(i-1));
 
@@ -75,6 +75,7 @@ public class DuplicateElementsArr {
                 }
                 output.add(aList.get(i));
                 output.add(count);
+
 
 
 
