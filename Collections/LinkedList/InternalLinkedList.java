@@ -11,17 +11,19 @@ public class InternalLinkedList{
         try {
             //Display the list
             list.display();
-            list.insertLast(11);
-            list.display();
-            list.inserValIndex(12, 0);
-            list.display();
+            //list.insertLast(11);
+            //list.display();
+            //list.inserValIndex(12, 0);
+           // list.display();
             //System.out.println(list.getValueByindex(9));
            // list.display();
             //System.out.println(list.getIndexByValue(12));
-            list.deleteFirst();
-            list.display();
+           // list.deleteFirst();
+            //list.display();
             list.deleteLast();
             list.display();
+//            list.deleteByIndex(6) ;
+//            list.display() ;
         }
         catch(Exception e)
         {

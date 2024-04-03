@@ -155,13 +155,18 @@ public class LL {
             //Delete Last element
             public  void deleteLast()
             {
-                Node secondLast =getNode(size-2);
-                System.out.println("Removed value= "+ secondLast.value);
-                tail=secondLast;
-                tail.value=secondLast.value;
+                if(size<=1)
+                {
+                    deleteFirst();
+                    return;
+
+                }
+                Node secondValue=getNode(size-2);
+                tail=secondValue;
                 tail.next=null;
 
                 size--;
+                System.out.println("Removed first element ie."+secondValue.value);
             }
 
             //Get the node by index value :
@@ -176,6 +181,24 @@ public class LL {
                 System.out.println(temp);
                 return temp ;
 
+            }
+
+            //Delete value at first index
+            public void deleteByIndex(int index)
+            {
+                if(index==0)
+                {
+                    deleteFirst();
+                    return;
+                }
+                if(index==size-1)
+                {
+                    deleteLast();
+                    return;
+                }
+                Node prev=getNode(size-2);
+                prev.next=prev.next.next;
+                return;
             }
 
     }
