@@ -1,6 +1,6 @@
 package Sanket.Oops_Concept.Interfaces_Ex;
 
-public abstract class MediaPlayer implements Media,UpgradeCar{
+public class MediaPlayer implements Media{
     @Override
     public void start() {
         System.out.println("This is starting media player");
@@ -21,11 +21,4 @@ public abstract class MediaPlayer implements Media,UpgradeCar{
         System.out.println("Play previous song >>");
     }
 
-
-
-    @Override
-    public void upgradeMedia() {
-        System.out.println("The media has been upgraded to latest version..");
-
-    }
 }
