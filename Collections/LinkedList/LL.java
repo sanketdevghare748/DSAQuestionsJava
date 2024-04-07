@@ -1,7 +1,7 @@
 package Sanket.Collections.LinkedList;
 
 public class LL {
-    private Node head;
+    Node head;
     private Node tail;
 
     private int size;
@@ -42,15 +42,17 @@ public class LL {
         //Function to insert a first element in the LL
         public void insertFirst( int val)
         {
-            Node node=new Node(val);
-            node.next=head;
-            head=node;
-
             if (tail==null) //If there is only one element
             {
                 tail=head;
             }
-            size=+1;
+
+            Node node=new Node(val);
+            node.next=head;
+            head=node;
+
+
+            //size=+1;
 
         }
         //Display the Nodes
@@ -71,16 +73,18 @@ public class LL {
 
         public void insertLast(int val)
         {
+            //if there is no element means tail==null,head==null
+            if(head==null)
+            {
+                insertFirst(val);
+            }
+
             Node node=new Node(val);
             tail.next=node;
             tail=node;
             tail.next=null;
-            //if there is no element means tail==null,head==null
-            if(tail==null)
-            {
-                insertFirst(val);
-            }
-            size++;
+
+            //size++;
         }
 
         //insert at a given index
@@ -201,5 +205,25 @@ public class LL {
                 return;
             }
 
-    }
+            //Insert in Singly linked list using the recursions
+            public  void insertRec(int val,int index){
+            head=insertRec(val,index,head);
+            }
+
+            private Node insertRec(int val,int index,Node node)
+            {
+                if(index==0)
+                {
+                    Node temp=new Node(node,val);
+                    size++;
+                    return temp;
+                }
+                node.next=insertRec(val, index--,node.next);
+                return node;
+            }
+
+    //Leetcode question: merge two sorted linked list to form a new sorted list
+
+
+}
 
