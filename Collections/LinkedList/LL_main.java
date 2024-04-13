@@ -39,19 +39,29 @@ public class LL_main{
 
         //insert values in first list
         first.insertLast(1);
+<<<<<<< HEAD
         first.insertLast(2);
+=======
+        first.insertLast(3);
+>>>>>>> origin/master
         first.insertLast(5);
         first.display();
 
         //insert values in second list
+<<<<<<< HEAD
         second.insertLast(1);
         second.insertLast(2);
+=======
+        second.insertLast(2);
+        second.insertLast(6);
+>>>>>>> origin/master
         second.insertLast(9);
         second.insertLast(14);
         second.display();
 
         ans=MergeSortedList.mergeSortedList(first,second);
         ans.display();
+<<<<<<< HEAD
 
 //        System.out.println("Next program is for Sort list using Bubble sort algo**************");
 //        //sort list using bubblesort in LL
@@ -74,5 +84,7 @@ public class LL_main{
         list2.display() ;
         list2.inPlaceReversalLL();
         list2.display();
+=======
+>>>>>>> origin/master
     }
 }
