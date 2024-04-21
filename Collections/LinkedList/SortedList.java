@@ -75,14 +75,12 @@ public class SortedList {
     {
         Node f=head;
         Node s=head;
-        if(f== null || f.next==null)
+        while (f!=null && f.next!=null)
         {
-            return head;
-        }
-        do{
             f=f.next.next;
             s=s.next;
-        }while (f.next!=null) ;
+        }
+
         return s ;
     }
 
@@ -180,6 +178,38 @@ public class SortedList {
         }
         return prev;
     }
+    void rotateList(Node head, int k)
+    {
+
+
+        if(head==null || head.next==null || k<=0)
+        {
+            return ;
+        }
+        //Find the last node, as tail may not be given.
+        Node last=head;
+        int length=1;
+        while (last.next!=null)
+        {
+            last=last.next;
+            length++;
+        }
+        last.next=head;
+        int rotations=k%length;
+
+        int skip=length-rotations;
+        Node newLast=head;
+
+        for(int i=0;i<skip-1;i++)
+        {
+            newLast=newLast.next;
+        }
+        head=newLast.next;
+        newLast.next=null ;
+
+    }
+
+
 
 
     public static void main(String[] args) {
@@ -193,9 +223,18 @@ public class SortedList {
                 list2.insertFirst(10-i);
 
         }
-        list2.display() ;
-        System.out.println(list2.isListPalindrome());
-        list2.display();
+        SortedList list3= new SortedList();
+        for(int i=2;i<5;i++) //Added a nodes in the LL
+        {
+
+                list3.insertFirst(i);
+
+        }
+        //list2.display() ;
+        //System.out.println(list2.isListPalindrome());
+        list3.display();
+        list3.rotateList(list3.head,2);
+        list3.display() ;
     }
 }
 
