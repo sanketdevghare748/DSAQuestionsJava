@@ -1,5 +1,6 @@
-package Sanket.com.Sanket.Leetcode_Q;
+package com.Sanket.Leetcode_Q;
 //Find second largest element of the array.
+
 public class SecondLargest {
     public static void main(String[] args) {
         int arr[]={1,4,2,15,6,2,9,9,10,10,17,15};

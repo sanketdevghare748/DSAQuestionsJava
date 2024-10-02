@@ -1,4 +1,4 @@
-package Sanket.Strings;
+package Strings;
 
 public class Defanging_IP {
     public static void main(String[] args) {
@@ -7,6 +7,6 @@ public class Defanging_IP {
     }
         static String defang (String address)
         {
-            return address.replace(".","[.]");
+            return address.replace(".","^");
         }
     }

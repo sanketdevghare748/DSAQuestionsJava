@@ -1,4 +1,4 @@
-package Sanket;
+
 import java.util.*;
 //Works for any array whether its ascending sorted or descending sorted.
 public class AgnosticBinarySearch {
@@ -49,7 +49,6 @@ public class AgnosticBinarySearch {
                 else {
                     end=mid-1;
                 }
-
             }
         }
         return -1;

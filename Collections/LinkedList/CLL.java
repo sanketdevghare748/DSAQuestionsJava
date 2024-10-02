@@ -1,4 +1,4 @@
-package Sanket.Collections.LinkedList;
+package Collections.LinkedList;
 
 import javax.sound.midi.Soundbank;
 

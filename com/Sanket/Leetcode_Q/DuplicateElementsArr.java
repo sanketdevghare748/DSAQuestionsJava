@@ -1,4 +1,4 @@
-package Sanket.com.Sanket.Leetcode_Q;
+package com.Sanket.Leetcode_Q;
 
 import java.util.*;
 

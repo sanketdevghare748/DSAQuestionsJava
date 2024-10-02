@@ -1,5 +1,3 @@
-package Sanket;
-import java.util.*;
 //This code works fine.
 public class PeakElementArray {
     public static void main(String[] args) {

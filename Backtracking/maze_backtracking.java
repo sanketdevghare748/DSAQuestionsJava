@@ -1,4 +1,4 @@
-package Sanket.Backtracking;
+package Backtracking;
 //The start index are (s_row,s_Col) for ex. (1,1,)
 //The end index are (e_row,e_Col) for ex. (3,3,)
 public class maze_backtracking {

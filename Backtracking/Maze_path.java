@@ -1,4 +1,4 @@
-package Sanket.Backtracking;
+package Backtracking;
 
 //return the path for maze question in the form of RD.
 public class Maze_path {

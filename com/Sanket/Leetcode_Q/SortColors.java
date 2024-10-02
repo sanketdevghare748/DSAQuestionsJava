@@ -1,4 +1,4 @@
-package Sanket.com.Sanket.Leetcode_Q;
+package com.Sanket.Leetcode_Q;
 //https://leetcode.com/problems/sort-colors/submissions/1208299607
 import java.util.ArrayList;
 import java.util.Arrays;

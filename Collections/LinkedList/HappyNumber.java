@@ -1,4 +1,4 @@
-package Sanket.Collections.LinkedList;
+package Collections.LinkedList;
 //Leetcode question: https://leetcode.com/problems/happy-number/description/
 
 public class HappyNumber {

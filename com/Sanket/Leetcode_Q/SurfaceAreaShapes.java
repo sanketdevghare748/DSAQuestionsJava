@@ -1,4 +1,4 @@
-package Sanket.com.Sanket.Leetcode_Q;
+package com.Sanket.Leetcode_Q;
 //Q: https://leetcode.com/problems/surface-area-of-3d-shapes/
 
 public class SurfaceAreaShapes {

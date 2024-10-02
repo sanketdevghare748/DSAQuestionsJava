@@ -1,4 +1,4 @@
-package Sanket;
+
 
 //Ascending order sorted array.
 public class BinarySearch {

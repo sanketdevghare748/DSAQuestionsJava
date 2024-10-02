@@ -1,6 +1,6 @@
-package Sanket.Collections.LinkedList;
+package Collections.LinkedList;
 
-import Sanket.Oops_Concept.Parent;
+import Oops_Concept.Parent;
 
 public class SortedList {
     SortedList.Node head;
@@ -8,8 +8,6 @@ public class SortedList {
 
     private int size;
     //Constructor for public class
-
-
     public SortedList() {
         this.head = null;
         this.tail = null;

@@ -1,4 +1,4 @@
-package Sanket;
+
 
 public class EvenDigitsNumber {
     public static void main(String[] args) {

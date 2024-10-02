@@ -1,4 +1,4 @@
-package Sanket;
+
 
 import java.util.Scanner;
 import java.util.*;

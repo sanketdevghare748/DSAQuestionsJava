@@ -1,4 +1,4 @@
-package Sanket.Backtracking;
+package Backtracking;
 
 import java.util.Arrays;
 

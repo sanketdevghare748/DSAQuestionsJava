@@ -1,4 +1,3 @@
-package Sanket;
 
 //Find the sqrt for the n, with some precision p.
 public class BS_Sqrt {

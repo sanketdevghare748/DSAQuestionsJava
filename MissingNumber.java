@@ -1,4 +1,4 @@
-package Sanket;
+
 
 import java.util.Arrays;
 //This is sample leetcode question

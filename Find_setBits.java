@@ -1,4 +1,4 @@
-package Sanket;
+
 //Q: find the number of set bits in the binary od the number.
 public class Find_setBits {
     public static void main(String[] args) {

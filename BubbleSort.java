@@ -1,4 +1,3 @@
-package Sanket;
 //This file needs to be adeded to git.
 import java.util.Arrays;
 
@@ -12,8 +11,8 @@ public class BubbleSort {
 
     static void sortBubble(int[] arr) {
         boolean swapped=false;
-        int temp = 0;
-        for(int i=0;i<arr.length-1;i++)
+        int temp=0;
+        for (int i=0 ;i<arr.length-1;i++)
         {
             for(int j=1;j<arr.length-i;j++)
             {

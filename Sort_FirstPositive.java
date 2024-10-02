@@ -1,10 +1,9 @@
-package Sanket;
 
 import java.util.Arrays;
 
 public class Sort_FirstPositive {
     public static void main(String[] args) {
-        int [] arr= {1};
+        int [] arr= {3,1,5,2,-3,-2};
         System.out.println(firstPositive(arr));
 
     }

@@ -2,8 +2,6 @@ package Sanket.Collections.Stacks_Queues;
 
 import java.util.Queue;
 
-import static jdk.nashorn.internal.objects.NativeArray.forEach;
-
 public class CustomeQueue {
     private int [] data;
     private static  final  int Default_Size=10;

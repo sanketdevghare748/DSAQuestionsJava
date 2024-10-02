@@ -1,8 +1,8 @@
-package Sanket.Strings;
+package Strings;
 
 public class Strings_Concept {
         public static void main(String[] args) {
-            int x = -10;
+            int x = -35;
             System.out.println(reverse(x));
         }
 

@@ -1,4 +1,4 @@
-package Sanket.Backtracking;
+package Backtracking;
 
 public class Maze_with_HVD {
     public static void main(String[] args) {

@@ -1,5 +1,4 @@
-package Sanket.Strings;
-
+package Strings;
 public class Pattern_Questions {
     public static void main(String[] args) {
         int n=4;

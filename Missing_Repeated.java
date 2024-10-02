@@ -1,4 +1,4 @@
-package Sanket;
+
 
 import java.util.Arrays;
 
@@ -24,6 +24,7 @@ public class Missing_Repeated {
             }
 
         }
+
         System.out.println(Arrays.toString(arr));
         //Find the repeated number and missing number:
         // missing number= index+1 ie. where index is not equal to the correct after arr is sorted.
@@ -36,7 +37,8 @@ public class Missing_Repeated {
                 return new int[] {index+1,arr[index]};
             }
         }
-        return new int[]{-1,-1}; //element not found as the imputs are wrong as per question.
+        return new int[]{-1,-1};
+        //element not found as the inputs are wrong as per question.
     }
 
     static void swap(int[] arr, int first,int second)
@@ -46,3 +48,5 @@ public class Missing_Repeated {
         arr[second]=temp;
     }
 }
+
+ //

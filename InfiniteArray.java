@@ -1,4 +1,4 @@
-package Sanket;
+
 //To find the element in an infinite array.
 public class InfiniteArray {
     public static void main(String[] args) {

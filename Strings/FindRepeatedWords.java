@@ -1,4 +1,4 @@
-package Sanket.Strings;
+package Strings;
 /* Q: Find the repeated words from the string and then display the word which is most repeated but the word repeated should not be banned.*/
 //https://leetcode.com/problems/most-common-word/
 

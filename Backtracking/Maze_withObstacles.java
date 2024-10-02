@@ -1,9 +1,10 @@
-package Sanket.Backtracking;
+package Backtracking;
 
 /* Here we need to avoid the blockers and guess the path, and we are starting from zero hence we need to increase the row and column values*/
 public class Maze_withObstacles {
     public static void main(String[] args) {
-        boolean[][] maze = new boolean[][]{{true, true, true},
+        boolean[][] maze = new boolean[][]
+                {{true, true, true},
                 {true, false, false},
                 {true, true, true}};
         //Initialise the bool array representing the maze board ,false as the obstacles.
