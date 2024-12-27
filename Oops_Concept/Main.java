@@ -1,4 +1,4 @@
-package Sanket.Oops_Concept;
+package Oops_Concept;
 
 public class Main {
     public static void main(String[] args) {

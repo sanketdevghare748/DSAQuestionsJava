@@ -1,4 +1,4 @@
-package Sanket.Recursion;
+package Recursion;
 
 public class Pattern_BubbleRec {
     public static void main(String[] args) {

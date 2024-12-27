@@ -1,4 +1,4 @@
-package Sanket.Oops_Concept;
+package Oops_Concept;
 
 public abstract class Parent {
      abstract void career();

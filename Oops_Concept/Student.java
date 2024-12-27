@@ -1,4 +1,4 @@
-package Sanket.Oops_Concept;
+package Oops_Concept;
 //Constructor and usage of this Keyword.
 public class Student {
     String name;

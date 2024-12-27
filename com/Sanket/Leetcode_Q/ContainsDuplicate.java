@@ -4,7 +4,7 @@ public class ContainsDuplicate {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int [] arr= {0,2,3,2,4};
+		int [] arr= {0,2,3,4,4};
 		System.out.println(containsDup(arr));
 	
 		

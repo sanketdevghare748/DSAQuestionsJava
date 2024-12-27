@@ -18,19 +18,43 @@ public class MergeArrayList {
 		list1.addAll(list2);
 		
 		//Sort list 1
-		for(int i=0;i<list1.size();i++)
+//		for(int i=0;i<list1.size();i++)
+//		{
+//			for(int j=1;j<list1.size()-i;j++)
+//			{
+//				if(list1.get(j-1)>=list1.get(j))
+//				{
+//					int temp= list1.get(j);
+//					list1.set(j, list1.get(j-1));
+//					list1.set(j-1, temp);
+//				}
+//			}
+		//}
+		
+		Object[] l=list1.toArray();
+		
+		for(int k=0;k<list1.size();k++)
 		{
-			for(int j=1;j<list1.size()-i;j++)
+			for(int m=1;m<l.length-k;m++)
 			{
-				if(list1.get(j-1)>=list1.get(j))
-				{
-					int temp= list1.get(j);
-					list1.set(j, list1.get(j-1));
-					list1.set(j-1, temp);
-				}
+				
+						{
+							swap(list1,m-1,m);
+						}
 			}
+		
 		}
+	
+	
 		return list1;
+		
+	}
+
+	private static void swap(ArrayList<Integer> list1, int m, int i) {
+		// TODO Auto-generated method stub
+		int temp=list1.get(m);
+		list1.set(m, list1.get(i));
+		list1.set(i, temp);
 		
 	}
 	

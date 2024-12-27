@@ -1,4 +1,4 @@
-package Sanket.Oops_Concept;
+package Oops_Concept;
 
 //import static jdk.internal.org.jline.utils.Colors.s;
 

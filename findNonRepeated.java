@@ -1,15 +1,20 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map.Entry;
 
 public class findNonRepeated {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int [] arr= {1,2,1,3,2,4,5,5,2};
-		System.out.println(getNonRepeating(arr));
+		//System.out.println(getNonRepeating(arr));
+		System.out.println(getNotRepeated(arr));
 		}
+
+	
 
 	private static List<Integer>getNonRepeating(int[] arr) {
 		// TODO Auto-generated method stub
@@ -36,7 +41,40 @@ public class findNonRepeated {
 		
 		return null;
 	}
-
+	
+	//Find the number which are not repeated in the array.
+	private static List<Integer> getNotRepeated(int[] arr) {
+		// TODO Auto-generated method stub
+		
+		if(arr.length==0)
+		{
+			return null;
+		}
+		HashMap<Integer,Integer> map= new HashMap<Integer,Integer>();
+		
+		for(int a: arr)
+		{
+			if(map.containsKey(a))
+			{
+				map.put(a,map.getOrDefault(a,0)+1);
+			}
+			else
+				map.put(a,1);
+		}
+		
+		List <Integer> op= new ArrayList<>();
+		for(Entry e:map.entrySet())
+		{
+			
+			int count= (int) e.getValue();
+			if(count==1)
+			{
+				op.add((int)e.getKey());
+			}
+		}
+		
+		return op;
+	}
 	}
 
 

@@ -1,4 +1,4 @@
-package Sanket.Recursion;
+package Recursion;
 
 import java.util.ArrayList;
 
