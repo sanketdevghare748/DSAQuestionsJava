@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Missing_Repeated {
     public static void main(String[] args) {
-        int [] arr= {2,3,2};
+        int [] arr= {4,3,2,7,8,2,3,1};
         System.out.println(Arrays.toString(missingRepeated(arr)));
 
     }
