@@ -61,6 +61,9 @@ public class Arraylist {
             System.out.println("keyyset : " + map.keySet());
             System.out.println("Valueset : " + map.values());
 
+           Collection<String> onj=  map.values();
+           Iterator <String> itr= onj.iterator();
+           
             for(Entry<String, String> m: map.entrySet())
             {
                 System.out.println("Key : " + m.getKey() + " Value : " + m.getValue());

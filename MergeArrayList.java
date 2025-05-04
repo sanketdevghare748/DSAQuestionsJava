@@ -13,8 +13,6 @@ public class MergeArrayList {
 	}
 
 	private static ArrayList <Integer> mergeTwoArrayList(ArrayList<Integer> list1, ArrayList<Integer> list2) {
-		// TODO Auto-generated method stub
-		int length= list1.size()+list2.size();
 		list1.addAll(list2);
 		
 		//Sort list 1

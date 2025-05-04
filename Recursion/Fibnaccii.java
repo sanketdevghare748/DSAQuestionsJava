@@ -1,8 +1,8 @@
-package Sanket.Recursion;
+package Recursion;
 //Get the nth fibonanci numbder.
 public class Fibnaccii {
     public static void main(String[] args) {
-        int n=4;
+        int n=6;
         System.out.println(fib(n));
     }
     static int fib(int n)

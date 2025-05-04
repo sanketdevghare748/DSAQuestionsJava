@@ -9,9 +9,10 @@ public class LongestCommonPrefix {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String[] strs = {"ab","a", "ac"}; // op should be 'fl"
+		String[] strs = {"abcsd","ad", "ac"}; // op should be 'fl"
 		System.out.println("Longest Prefix:"+getLongestCommonPrefix(strs));
-		System.out.println("Longest Suffix:"+getLongestCommonSuffix(strs));
+		//System.out.println("Longest Suffix:"+getLongestCommonSuffix(strs));
+		System.out.println(strs[0].substring(0,5));
 
 	}
 

@@ -7,6 +7,6 @@ public class Defanging_IP {
     }
         static String defang (String address)
         {
-            return address.replace(".","^");
+            return address.replace("."," ");
         }
     }

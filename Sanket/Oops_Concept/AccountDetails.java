@@ -58,8 +58,7 @@ public class AccountDetails {
 
 		// Add balance as zero
 		UserCurrentBalance.put(account_number, 0.0);
-
-		System.out.println(
+				System.out.println(
 				"Dear " + Name + " , user creation is successfull, please find your account number as : ******* "
 						+ account_number + " *******");
 		System.out.println("Would you like to login (Y/N)? ");

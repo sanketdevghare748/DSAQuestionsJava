@@ -11,18 +11,27 @@ public class MoveZeroes {
 	}
 
 	private static void sort(int[] arr) {
-		// TODO Auto-generated method stub
-		int left = 0; // Pointer to place the next zero
+		int lastzeroPos=0;
+		for(int i=0;i<arr.length;i++)
+		{
+			if(!(arr[i]==0))
+			{
+				int temp= arr[lastzeroPos];
+				arr[lastzeroPos] = arr[i];
+				arr[i]=temp;
+				lastzeroPos++;
+			}
+		}
 
-        for (int right = 0; right < arr.length; right++) {
-            if (arr[right] == 0) {
-                // Swap zero to the left position
-                int temp = arr[left];
-                arr[left] = arr[right];
-                arr[right] = temp;
-                left++; // Move left pointer forward
-            }
-        }
+
     }
+
+	private static void swap(int[] arr, int i, int zeroPos) {
+		// TODO Auto-generated method stub
+		int temp=arr[zeroPos];
+		arr[zeroPos]=arr[i];
+		arr[i]=arr[zeroPos];
+		System.out.println(Arrays.toString(arr));
+	}
 	}
 

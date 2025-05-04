@@ -9,7 +9,7 @@ public class Anchor_letter {
 	//String array is given we need to max number of common character present in all the strings. for ex: sanket,mniket,venket her common 
 		/** here common is n,k,e,t so anchor letter =4; 
 		approach: create common string merge to for a set of all unique characters**/
-		String [] arr= {"san","saniket","sanket"};
+		String [] arr= {"adesankett","saniket","sanket"};
 		HashSet<Character> set= new HashSet<>();
 		for(char c:arr[0].toCharArray())
 		{
